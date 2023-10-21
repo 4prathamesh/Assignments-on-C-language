@@ -222,6 +222,33 @@ int main()
     }
     return 0;
 }
+// simple loginc
+#include<stdio.h>
+int main()
+{
+    int i,j,a;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=9;j++)
+        {
+            if(j<=i)
+            {
+                printf("%d ",j);
+                a=j;
+            }
+            else if(j>i && a!=1 )
+            {
+                --a;
+                printf("%d ",a);
+            }
+            else{
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
 */
 
 // A 
@@ -251,24 +278,34 @@ int main()
 }
 */
 
+
+// ********1********
+// *******2*2*******
+// ******3*3*3******
+// *****4*4*4*4*****
+// ****5*5*5*5*5****
+/*
 #include<stdio.h>
 int main()
 {
     int i,j,a;
     for(i=1;i<=5;i++)
     {
-        for(j=1;j<=5;j++)
+        for(j=1;j<=17;j++)
         {
-            if(j==6-i)
+            if(i%2==0 && j>=10-i && j%2==0 && j<=8+i)
             {
-                printf("%d",j);
+                printf("%d",i);
+            }
+            else if(i%2!=0 && j>=10-i && j%2!=0 && j<=8+i)
+            {
+                printf("%d",i);
             }
             else{
-                printf(" ");
+                printf("*");
             }
         }
         printf("\n");
     }
     return 0;
-    
-}
+}*/
