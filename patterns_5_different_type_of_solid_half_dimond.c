@@ -5,6 +5,7 @@
 // 555
 // 44
 // 3
+/*
 #include<stdio.h>
 int main()
 {
@@ -35,6 +36,32 @@ int main()
             --a;
         }
         
+        printf("\n");
+    }
+    return 0;
+}
+*/
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    for(i=1;i<=8;i++)
+    {
+        for(j=1;j<=7;j++)
+        {
+            if(j%2!=0 && j<=i)
+            {
+                printf("%d",i);
+            }
+            else if(j%2==0 && j<=i)
+            {
+                printf("*");
+                
+            }
+            else{
+                printf(" ");
+            }
+        }
         printf("\n");
     }
     return 0;
